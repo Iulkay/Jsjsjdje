@@ -1,0 +1,349 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Iulkay Hub", "BloodTheme")
+
+--Main
+
+local Main= Window:NewTab("Main")
+
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewButton("Pet Simulator X", "Auto Farm And More", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+
+end)
+
+MainSection:NewButton("Loomian Legacy", "Auto Farm And More", function()
+
+    loadstring(game:HttpGet"https://thedragonslayer2.github.io/AutoExec.html")()
+
+end)
+
+MainSection:NewButton("Cheesey Hub", "Auto Farm And More", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
+
+end)
+
+MainSection:NewButton("Pop it Trading / Dupe", "Auto Farm And More", function()
+
+    _G.credits = "Credits to iShield. DISCORD SERVER INVITE LINK: https://discord.gg/x57Xk65xZs"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iShield2005/scripts/master/shieldhubloader"))()
+
+end)
+
+--Main
+
+local Main= Window:NewTab("Misc/Extra")
+
+local MainSection = Main:NewSection("Extras and Misc")
+
+MainSection:NewButton("Fates Admin", "Auto Farm And More", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua'))()
+
+end)
+
+MainSection:NewButton("Invisible Un Invisible", "Auto Farm And More", function()
+
+   loadstring(game:HttpGet('https://pastebin.com/raw/AYtzGEPb'))()
+
+end)
+
+MainSection:NewButton("Hit Box Expander", "Hit Ppl From Far Away", function()
+
+   _G.HeadSize = 60
+
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+
+if _G.Disabled then
+
+for i,v in next, game:GetService('Players'):GetPlayers() do
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+
+pcall(function()
+
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+
+v.Character.HumanoidRootPart.Transparency = 0.7
+
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+
+v.Character.HumanoidRootPart.Material = "Neon"
+
+v.Character.HumanoidRootPart.CanCollide = false
+
+end)
+
+end
+
+end
+
+end
+
+end)
+
+end)
+
+MainSection:NewButton("No Collision Fling", "Works Best In LGBTG Hang Out", function()
+
+   --Pusher made by rouxhaver/1+1=2
+
+--Hat resizer and dropper made by DigitalityScripts
+
+--This script sometimes works in games without player-collision
+
+--INSTRUCTIONS:
+
+--use r15 body type
+
+--have a classic Rthro Head 
+
+--wear any Rthro Hats
+
+--RECOMMENDED:
+
+--https://www.roblox.com/catalog/2493588193/Knights-of-Redcliff-Paladin-Head
+
+--https://www.roblox.com/catalog/4381828509/Junkbot-Hat
+
+--https://www.roblox.com/catalog/2493590711/Knights-of-Redcliff-Paladin-Helmet
+
+--https://www.roblox.com/catalog/2493718915/The-High-Seas-Beatrix-The-Pirate-Queen-Hat
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/hat%20resize%20%2B%20drop'))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/random-sh-t/main/non%20local%20free%20cam%20start.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/random-sh-t/main/Credit"))()
+
+ToggleFreecam() -- Remove this if you don't want free cam or etcetera
+
+player = game.Players.LocalPlayer
+
+mouse = player:GetMouse()
+
+for i,v in pairs(player.Character:GetChildren()) do
+
+    if v:IsA("Accessory") then
+
+        _ = Instance.new("SelectionBox",v)
+
+        _.Adornee = v.Handle
+
+        game.RunService.Heartbeat:Connect(function()
+
+            v.Handle.CustomPhysicalProperties = PhysicalProperties.new(0,0,0,0,0)
+
+            v.Handle.Velocity = Vector3.new(25.70,0,0)
+
+            v.Handle.CanCollide = false
+
+        end)
+
+        if e ~= "e" then                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            game.Players.LocalPlayer:Kick() 
+
+        end
+
+        coroutine.wrap(function()
+
+            while task.wait() do
+
+                v.Handle.Position = mouse.Hit.Position + Vector3.new(math.random(-15,15),math.random(0,15),math.random(-15,15))
+
+                v.Handle.Orientation = Vector3.new(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+
+            end
+
+        end)()
+
+    end
+
+end
+
+end)
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.V, function()
+
+	Library:ToggleUI()end)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Iulkay Hub", "BloodTheme")
+
+--Main
+
+local Main= Window:NewTab("Main")
+
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewButton("Pet Simulator X", "Auto Farm And More", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+
+end)
+
+MainSection:NewButton("Loomian Legacy", "Auto Farm And More", function()
+
+    loadstring(game:HttpGet"https://thedragonslayer2.github.io/AutoExec.html")()
+
+end)
+
+MainSection:NewButton("Cheesey Hub", "Auto Farm And More", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
+
+end)
+
+MainSection:NewButton("Pop it Trading / Dupe", "Auto Farm And More", function()
+
+    _G.credits = "Credits to iShield. DISCORD SERVER INVITE LINK: https://discord.gg/x57Xk65xZs"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iShield2005/scripts/master/shieldhubloader"))()
+
+end)
+
+--Main
+
+local Main= Window:NewTab("Misc/Extra")
+
+local MainSection = Main:NewSection("Extras and Misc")
+
+MainSection:NewButton("Fates Admin", "Auto Farm And More", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua'))()
+
+end)
+
+MainSection:NewButton("Invisible Un Invisible", "Auto Farm And More", function()
+
+   loadstring(game:HttpGet('https://pastebin.com/raw/AYtzGEPb'))()
+
+end)
+
+MainSection:NewButton("Hit Box Expander", "Hit Ppl From Far Away", function()
+
+   _G.HeadSize = 60
+
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+
+if _G.Disabled then
+
+for i,v in next, game:GetService('Players'):GetPlayers() do
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+
+pcall(function()
+
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+
+v.Character.HumanoidRootPart.Transparency = 0.7
+
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+
+v.Character.HumanoidRootPart.Material = "Neon"
+
+v.Character.HumanoidRootPart.CanCollide = false
+
+end)
+
+end
+
+end
+
+end
+
+end)
+
+end)
+
+MainSection:NewButton("No Collision Fling", "Works Best In LGBTG Hang Out", function()
+
+   --Pusher made by rouxhaver/1+1=2
+
+--Hat resizer and dropper made by DigitalityScripts
+
+--This script sometimes works in games without player-collision
+
+--INSTRUCTIONS:
+
+--use r15 body type
+
+--have a classic Rthro Head 
+
+--wear any Rthro Hats
+
+--RECOMMENDED:
+
+--https://www.roblox.com/catalog/2493588193/Knights-of-Redcliff-Paladin-Head
+
+--https://www.roblox.com/catalog/4381828509/Junkbot-Hat
+
+--https://www.roblox.com/catalog/2493590711/Knights-of-Redcliff-Paladin-Helmet
+
+--https://www.roblox.com/catalog/2493718915/The-High-Seas-Beatrix-The-Pirate-Queen-Hat
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/hat%20resize%20%2B%20drop'))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/random-sh-t/main/non%20local%20free%20cam%20start.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/random-sh-t/main/Credit"))()
+
+ToggleFreecam() -- Remove this if you don't want free cam or etcetera
+
+player = game.Players.LocalPlayer
+
+mouse = player:GetMouse()
+
+for i,v in pairs(player.Character:GetChildren()) do
+
+    if v:IsA("Accessory") then
+
+        _ = Instance.new("SelectionBox",v)
+
+        _.Adornee = v.Handle
+
+        game.RunService.Heartbeat:Connect(function()
+
+            v.Handle.CustomPhysicalProperties = PhysicalProperties.new(0,0,0,0,0)
+
+            v.Handle.Velocity = Vector3.new(25.70,0,0)
+
+            v.Handle.CanCollide = false
+
+        end)
+
+        if e ~= "e" then                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            game.Players.LocalPlayer:Kick() 
+
+        end
+
+        coroutine.wrap(function()
+
+            while task.wait() do
+
+                v.Handle.Position = mouse.Hit.Position + Vector3.new(math.random(-15,15),math.random(0,15),math.random(-15,15))
+
+                v.Handle.Orientation = Vector3.new(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+
+            end
+
+        end)()
+
+    end
+
+end
+
+end)
+
+--Main
+
+local Main= Window:NewTab("Misc V2")
+
+local MainSection = Main:NewSection("Extras")
